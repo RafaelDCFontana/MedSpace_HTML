@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+    html, body {
+        margin: 0;
+    }
+    body {
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .wrapper {
+        width: 1200px;
+        display: flex;
+        margin: 0 auto;
+        background-color: aquamarine;
+    }
+    .main {
+        display: flex;
+        flex-flow: column;
+        width: 85%;
+    }
+    .menu {
+        width: 15%;
+        background-color: rgb(56, 134, 134);
+        padding: 10px 20px 0px;
+        font-size: 25px;
+        font-weight: lighter;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .header {
+        background-color: rgb(56, 134, 134);
+        min-height: 150px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;      
+    }
+    .content {
+        background-color: rgba(186, 233, 233, 0.747);
+        min-height: 300px;
+        padding: 20px;
+    }
+    .footer {
+        background-color: rgb(56, 134, 134);
+        min-height: 150px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .img {
+        background-color: rgb(56, 134, 134);
+        position: absolute;
+        left: 30%;
+        top: 3%;
+        mix-blend-mode: multiply;
+        width: 0px;
+    }
+    .img2 {
+        position: absolute;
+        left: 21.8%;
+        top: 23%;
+        mix-blend-mode: normal;
+    }
+    .title {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <h4 align="center">Menu</h4>
+            <ul>
+                <li><a href="index.html" target="_parent">MedSpace</a></li>
+                <li><a href="about.html" target="_parent">Sobre nós</a></li>
+                <li><a href="schedule.html" target="_parent">Atendimento</a></li>
+                <li><a href="contact.html" target="_parent">Contato</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="header">
+                <h1 align="center">MedSpace</h1> 
+                <h2><p align="center">Centro de Excelência no tratamento contra o câncer</p></h2>
+            </div>
+            <div class="img">
+                <img src="logo_cancer.jfif" width="80px"/> 
+            </div>
+            <div class="img2">
+                <img src="Cont..jpg" width="980px" height="300px" alt="Foto da nossa equipe de atendimento em frente a computadores, com headphones, sorrindo."/>
+            </div>
+            <div class="content" align="center">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 style="text-align: center;" class="title">Contato</h2>
+                <p>(31)90000-0000 (Whatsapp) ou (31)8888-8888</p>
+                <p>Rua Oitenta, Número 88, Bairro Vila Real, Caeté, MG, Brasil</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15007.769420095392!2d-43.65308997959539!3d-19.88465587234067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1688223935267!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+                <p>Como podemos ajudar?</p>
+                <form onsubmit="" method="get" align="left">
+                    <fieldset>
+                        <legend>Informações pessoais</legend>
+                        Nome:<input required type="text" size="21px"><br>
+                        <br>
+                        Celular:<input required type="tel"/><br>
+                        <br>
+                        E-mail:<input required type="email" size="20.5px"/><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Como ficou sabendo do MedSpace?</legend>
+                        <select>
+                            <option value="">Selecione uma opção</option>
+                            <option value="family">Família</option>
+                            <option value="friends">Amigos</option>
+                            <option value="internet">Internet</option>
+                            <option value="tv">Televisão</option>
+                            <option value="magazines">Jornais/Revistas</option>
+                            <option value="other">Outros</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Assunto</legend>
+                        <select>
+                            <option value="">Selecione uma opção</option>
+                            <option value="appointment">Consulta</option>
+                            <option value="surgery">Cirurgia</option>
+                            <option value="treatment">Tratamento</option>
+                            <option value="praise">Elogios</option>
+                            <option value="reviews">Críticas</option>
+                            <option value="sugestions">Sugestões</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Deixe aqui sua mensagem</legend>
+                        <textarea rows="10" cols="121"></textarea>
+                    </fieldset>
+                    <button onsubmit="alert('Mensagem enviada. Agradecemos pelo contato.')">Enviar</button>
+                    <button type="reset">Limpar formulário</button>
+                </form>
+            </div>
+            <div class="footer">
+                <h3 align="center">Copyright<sup>®</sup> MedSpace 2023</h3>
+                <p align="center">Rua Oitenta, Número 88, Bairro Vila Real, Caeté, MG, Brasil</p>
+                <p align="center">(31)90000-0000 (Whatsapp) ou (31)8888-8888</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
